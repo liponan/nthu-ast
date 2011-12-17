@@ -5,8 +5,10 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
-# encoding: utf-8
 
+
+# encoding: utf-8
+User.create(:email=>"nthu.ast",:password=>"20050601",:power=>"0")
 BlockType.create(:name=>"場佈",:remark=>"佈")
 BlockType.create(:name=>"彩排",:remark=>"彩")
 BlockType.create(:name=>"演出",:remark=>"演")
@@ -15,4 +17,3 @@ EventStatus.create(:name=>"審核中")
 EventStatus.create(:name=>"完成登記")
 EventStatus.create(:name=>"取消")
 EventStatus.create(:name=>"待補件")
-User.create(:email=>"nthu.ast",:password=>"20050601",:power=>"0")
