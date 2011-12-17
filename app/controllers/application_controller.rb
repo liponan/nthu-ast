@@ -32,8 +32,8 @@ class ApplicationController < ActionController::Base
 
     def access_denied
       session[:return_to] = request.request_uri
-      flash[:error] = "E-mail 或密碼輸入錯了嗎？再試一次吧！" 
-      redirect_to(:controller => 'user', :action => 'login')
+      #flash[:error] = "E-mail 或密碼輸入錯了嗎？再試一次吧！" 
+      redirect_to(:controller=>'user', :action=>'login')
     end
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
