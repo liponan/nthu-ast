@@ -1,3 +1,4 @@
+# encoding: utf-8
 class ItemsController < ApplicationController
   def new
     @item = Item.new(params[:item])

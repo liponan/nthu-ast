@@ -1,3 +1,4 @@
+# encoding: utf-8
 class UserController < ApplicationController
   before_filter :login_required, :except => [:login, :loggingin, :sign_up, :profile] 
   def login
