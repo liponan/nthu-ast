@@ -21647,3 +21647,95 @@ ActionController::RoutingError (No route matches "/admin/style.css" with {:metho
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing UserController#logout (for 127.0.0.1 at 2011-12-17 22:54:46) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-12-17 22:54:46) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered shared/_menu (0.4ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-17 22:54:46) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#loggingin (for 127.0.0.1 at 2011-12-17 22:54:57) [POST]
+  Parameters: {"commit"=>"登\345\205\245", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "user"=>{"password"=>"a'=='a", "email"=>""}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = 'a''==''a' AND "users"."email" = '') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:15:in `loggingin'
+
+Rendered rescues/_trace (32.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#loggingin (for 127.0.0.1 at 2011-12-17 22:55:06) [POST]
+  Parameters: {"commit"=>"登\345\205\245", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "user"=>{"password"=>"a'=='a", "email"=>"lishantreasure@gmail.com"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."password" = 'a''==''a' AND "users"."email" = 'lishantreasure@gmail.com') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/user_controller.rb:15:in `loggingin'
+
+Rendered rescues/_trace (32.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#loggingin (for 127.0.0.1 at 2011-12-17 22:55:14) [POST]
+  Parameters: {"commit"=>"登\345\205\245", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "user"=>{"password"=>"123456", "email"=>"lishantreasure@gmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = '123456' AND "users"."email" = 'lishantreasure@gmail.com') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 8ms (DB: 0) | 302 Found [http://localhost/user/loggingin]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-17 22:55:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-17 22:55:14) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-17 23:03:30) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 86ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-17 23:03:30) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
