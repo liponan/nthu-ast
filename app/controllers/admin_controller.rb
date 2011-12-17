@@ -24,7 +24,7 @@ class AdminController < ApplicationController
     @faq = Faq.find(params[:id])
     if request.post? and @faq.update_attributes(params[:faq])
       flash[:message] = "FAQ更新成功！"
-      redirect_to (:action=>"faq")
+      redirect_to(:action=>"faq")
     end
   end
 end
