@@ -1,0 +1,35 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">新增預設器材選項</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<% form_for :item do |f| %>
+				<fieldset>
+					<legend><h3>
+						器材
+					</h3></legend>
+				<p>
+					<strong>
+						器材名稱
+					</strong><br />
+					<%= f.text_field :name %>
+				</p>
+				<p>
+					<strong>
+						備註
+					</strong><br />
+					<%= f.text_field :remark %>
+				</p>
+
+				</fieldset>
+
+				<p><%= f.submit '新增' %></p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

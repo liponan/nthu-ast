@@ -1,0 +1,45 @@
+
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">查詢演藝廳<%=h @year%>年<%=h @month %>月檔期</a></h2>
+			<p>
+				<%= link_to '上個月', :year=>@year, :month=>(@month-1)%> | 
+				<%= link_to '下個月', :year=>@year, :month=>(@month+1)%>
+			</p>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<ul>
+					<% for d in 1..@days %>
+					<% @date = Date.new(@year, @month, d) %>
+						<% unless (@date.jd.to_i - Time.now.to_date.jd.to_i) < 30 %>
+							<li>
+							<% @programs = Program.find_by_date(@date) %>
+							<% if @programs %>
+								【<%=h @weekdays[@date.strftime("%w").to_i] %>】
+								<%= link_to @date.strftime("%Y/%m/%d"), :action=>:query, \
+								:date=>@date.strftime("%Y-%m-%d") %> 
+								部份時段已外借
+							<% else %>	
+								【<%=h @weekdays[@date.strftime("%w").to_i] %>】
+								<%= link_to @date.strftime("%Y/%m/%d"), :action=>:reserve, \
+								:date=>@date.strftime("%Y-%m-%d") %> 
+								
+							<% end # if %>
+							</li>
+						<% end %>
+					<% end %>
+					</ul>
+
+			</div>
+			<p>
+				<%= link_to '上個月', :year=>@year, :month=>(@month-1)%> | 
+				<%= link_to '下個月', :year=>@year, :month=>(@month+1)%>
+			</p>
+			
+		</div>
+	</div>
+</div>

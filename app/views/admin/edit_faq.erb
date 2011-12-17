@@ -1,0 +1,32 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				編輯FAQ條目
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<fieldset>
+					<legend><h3>
+						由 <%= @faq.user.name %> 建立
+					</h3></legend>
+					<% form_for :faq do |f| %>					
+						<p><strong>
+							問題
+						</strong><br />
+						<%= f.text_area :question, :size=>"60x3" %></p>
+						<p><strong>
+							回答
+						</strong><br />
+						<%= f.text_area :answer, :size=>"60x5" %></p>
+						<%= f.submit '更新' %>
+					<% end %>
+				</field>
+
+			</div>
+		</div>
+	</div>
+</div>

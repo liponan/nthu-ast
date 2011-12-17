@@ -1,0 +1,26 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				我的借用紀錄
+			</a></h2>
+			<p class="meta"><span class="date"></p>
+			<div class="entry">
+				<ul>
+					<% for p in @programs %>
+						<li>
+							<%=h p.date%> <strong><%=h p.name %></strong> 
+							<% if p.event_status_id == 0 %>
+							[<%=link_to '編輯', :controller=>"auditorium", \
+								:action=>"edit", :pid=>p.pid %>]
+								[<%=link_to '取消', :controller=>"auditorium", \
+									:action=>"cancel", :pid=>p.pid %>]	
+							<% end %>
+						</li>
+					<% end %>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>

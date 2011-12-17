@@ -1,0 +1,62 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				填寫節目時間表
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<% form_for :program_item do |f| %>
+					<table>
+						<tr>
+							<th>
+								名稱
+							</th>
+							<th>
+								備註
+							</th>
+							<th>
+								借用
+							</th>
+						</tr>
+						
+						<% for p in @program_items %>
+							<td><%=h p.name %></td>
+							<td>
+								...
+							</td>
+						</tr>
+						<% end %>
+						<% for i in @items %>
+						
+							<td><%=h i.name %></td>
+							<td><%=h i.remark %></td>
+							<td><%=h button_to '增加', :action=>:add_item, \
+							:pid=>@program.pid,:id=>i.id %></td>
+						</tr>
+						<% end %>
+						<tr>
+							<td>
+								<%= f.text_field :name %>
+							</td>
+							<td>
+								請填寫自備的器材
+							</td>
+							<td>
+								<%= f.submit '新增' %>
+							</td>
+						</tr>	
+					</table>
+					
+				<% end %>
+				<% if @items %>
+				<p>填寫完了嗎？ 請檢查<%= link_to '借用明細'%>完成借用程序。</p>
+				<% end %>
+			</div>
+			
+		</div>
+	</div>
+</div>

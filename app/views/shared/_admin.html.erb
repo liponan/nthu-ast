@@ -1,0 +1,22 @@
+
+<ul>
+	<li>
+		<h2>管理者工具 </h2>
+		<p>
+			<% session[:return_to] = request.request_uri %>	
+			
+		</p>
+		<ul>
+			<li>
+				<%= link_to '審核借用申請', :controller=>"admin", :action=>"qualify" %>
+			</li>
+			<li>
+				<%= link_to '檢視所有借用申請', :controller=>"admin", :action=>"list" %>
+			</li>
+		
+			<li>
+				<%= link_to '管理FAQ', :controller=>"admin", :action=>"faq" %>
+			</li>
+
+		</ul>
+	</li>

@@ -1,0 +1,59 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">使用者資料 </a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+			<div class="navy">
+			<em><%= link_to '編輯', :controller=>"user", :action=>"edit_profile" %></em>
+			</div>
+				</p>
+			<div class="entry">
+			
+				<fieldset>
+					<legend><h3>
+						帳戶資訊
+					</h3></legend>
+				<p>
+					<strong>姓名</strong><br />
+					<%= @user.name %>
+				</p>
+				<p>
+					<strong>E-mail</strong><br />
+					<%= @user.email %>
+				</p>
+
+				</fieldset>
+				<br/>
+				<fieldset>
+					<legend><h3>
+						聯絡資訊
+					</h3></legend>
+				<p>
+					<strong>
+						服務單位
+					</strong><br />
+					<%= @user.unit %>
+				</p>
+				<p>
+					<strong>職稱</strong><br />
+					<%= @user.title %>
+				</p>
+				<p>
+					<strong>連絡電話</strong><br />
+					<%= @user.phone %>
+				</p>
+				<p>
+					<strong>手機</strong><br />
+					<%= @user.mobile %>
+				</p>
+				<p>
+					<strong>傳真</strong><br />
+					<%= @user.fax %>
+				</p>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</div>

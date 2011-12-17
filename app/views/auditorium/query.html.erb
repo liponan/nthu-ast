@@ -1,0 +1,39 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">查詢演藝廳 <%=h @date2 %> 檔期</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<% if @check == 3%>
+					<p>對不起， <%=h @date2.strftime('%Y/%m%d')%> 全日時段均已外借，
+						<%=link_to '請重新查詢其他時段', :action=>"list"%>。</p>
+				<% else%>
+					<ul>
+					<% for p in @programs %>
+						<% if p.block_1 == 1%>
+							<li>
+								早上時段已外借
+							</li>
+						<% end %>
+						<% if p.block_2 == 1%>
+							<li>
+								下午時段已外借
+							</li>
+						<% end %>
+						<% if p.block_3 == 1%>
+							<li>
+								晚上時段已外借
+							</li>
+						<% end %>
+					<% end %>
+					</ul>
+					<%= link_to '借用'+@date,:action=>:reserve, :date=>@date %>
+				<% end %>
+			</div>
+			
+		</div>
+	</div>
+</div>

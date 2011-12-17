@@ -1,0 +1,19 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				您輸入的年月不開放預約
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+					您輸入的月份為當前月份或者過往月份，不開放預約。
+				
+
+			</div>
+			
+		</div>
+	</div>
+</div>

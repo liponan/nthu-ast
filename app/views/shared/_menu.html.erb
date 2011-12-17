@@ -1,0 +1,19 @@
+<ul>
+	<li>
+		<h2>合勤演藝廳管理系統 </h2>
+		<ul>
+			<li><a href="#">本月節目表</a></li>
+			<li>
+				<%= link_to '查詢檔期', :controller=>"auditorium", :action=>"query_by_month" %>
+			</li>
+			<li><a href="#">
+				預約場勘
+			</a></li>
+			<% unless @user and session[:id] %>
+			<li>
+				<%= link_to '使用者登入', :controller=>"user", :action=>"login" %>
+			</li>
+			<% end %>
+
+		</ul>
+	</li>

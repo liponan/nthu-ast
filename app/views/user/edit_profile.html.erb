@@ -1,0 +1,68 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">使用者註冊 </a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<p>
+					所有資料皆僅供管理人員聯絡用，請放心填寫！
+				</p>
+				<% form_for :user do |f| %>
+				<fieldset>
+					<legend><h3>
+						帳戶資訊
+					</h3></legend>
+					<p>
+						<strong>姓名</strong><br />
+						<%= @user.name %>
+					</p>
+				<p>
+					<strong>E-mail</strong><br />
+					將以您填寫的E-mail帳號做為登入帳號，請務必填寫
+					<br />
+					<%= f.text_field :email %>
+				</p>
+				<p>
+					<strong>密碼</strong><br />
+					6-20碼之英文或數字，大小寫不同
+					<br />
+					<%= f.password_field :password %>
+				</p>
+				</fieldset>
+				<br/>
+				<fieldset>
+					<legend><h3>
+						聯絡資訊
+					</h3></legend>
+				<p>
+					<strong>
+						服務單位
+					</strong><br />
+					<%= f.text_field :unit %>
+				</p>
+				<p>
+					<strong>職稱</strong><br />
+					<%= f.text_field :title%>
+				</p>
+				<p>
+					<strong>連絡電話</strong><br />
+					<%= f.text_field :phone %>
+				</p>
+				<p>
+					<strong>手機</strong><br />
+					<%= f.text_field :mobile %>
+				</p>
+				<p>
+					<strong>傳真</strong><br />
+					<%= f.text_field :fax %>
+				</p>
+				</fieldset>
+				<p><%= f.submit '更新資料' %></p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,56 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				新增FAQ
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<fieldset>
+					<legend><h3>
+						編寫新FAQ條目
+					</h3></legend>
+					<% form_for :faq do |f| %>
+						<p><strong>
+							問題
+						</strong><br />
+						<%= f.text_area :question, :size=>"60x3" %></p>
+						<p><strong>
+							回答
+						</strong><br />
+						<%= f.text_area :answer, :size=>"60x5" %></p>
+						<%= f.submit '新增' %>
+					<% end %>
+				</field>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				管理FAQ
+			</a></h2>
+			<p class="meta"><span class="date"></p>
+			<div class="entry">
+				<ul>
+					<% for f in @faqs %>
+						<li>
+							<%=h f.question %> <br />
+							[<%= link_to '編輯', :action=>:edit_faq, :id=>f.id %>] 
+							[<%= link_to '刪除', :action=>:delete_faq, :id=>f.id %>] 
+							<em> 由 <%=h f.user.name %> 新增 </em>
+						</li>
+					<% end %>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>

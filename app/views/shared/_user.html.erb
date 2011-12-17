@@ -1,0 +1,23 @@
+
+<ul>
+	<li>
+		<h2><%=h @user.name %> </h2>
+		<p>
+			<% session[:return_to] = request.request_uri %>	
+			
+		</p>
+		<ul>
+			<li>
+				<%= link_to '個人資料', :controller=>"user", :action=>"profile" %>
+				
+			</li>
+			<li>
+				<%= link_to '借用紀錄', :controller=>"user", :action=>"records" %>
+			</li>
+		
+			<li>
+				<%= link_to '登出', :controller=>"user", :action=>"logout" %>
+			</li>
+
+		</ul>
+	</li>

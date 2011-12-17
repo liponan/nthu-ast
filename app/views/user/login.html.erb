@@ -1,0 +1,25 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">使用者登入 </a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<p>
+					沒有帳號嗎？<%=link_to '填寫簡單的資料即可註冊', :action=>"sign_up" %>使用本系統。
+				</p>
+				<fieldset>
+					<legend>
+						登入
+					</legend>
+					<%= form_tag :action => 'loggingin'%>
+						E-main: <%= text_field "user", "email" %><br />
+					    密碼: <%= password_field "user", "password" %><br />
+					    <%= submit_tag '登入' %>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+</div>

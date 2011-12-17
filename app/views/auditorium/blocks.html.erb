@@ -1,0 +1,47 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				填寫節目時間表
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<% form_for :block do |f| %>
+					<table>
+						<tr>
+							<th>
+								類型
+							</th>
+							<th>
+								時間
+							</th>
+						</tr>
+						<% for b in @blocks %>
+						<td>
+							<td><%=h b.block_type.name %></td>
+							<td><%=h b.time %></td>
+						</tr>
+						<% end %>
+						<tr>
+							<td>
+								<%= collection_select(:block, :block_type_id, \
+								BlockType.all, :id, :name) %>
+							</td>
+							<td>
+								<%= f.text_field :time %>
+							</td>
+						</tr>	
+					</table>
+					<%= f.submit '新增' %>
+				<% end %>
+				<% if @blocks %>
+				<p>填寫完了嗎？ 請按<%= link_to '下一步', :action=>:items, :pid=>@program.pid %>繼續填寫器材清單。</p>
+				<% end %>
+			</div>
+			
+		</div>
+	</div>
+</div>

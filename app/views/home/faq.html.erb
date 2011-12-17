@@ -1,0 +1,40 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				FAQ 常見問題
+			</a></h2>
+			<p class="meta"><span class="date"></p>
+			<div class="entry">
+				<ul>
+					<% for f in @faqs %>
+						<li>
+							<%= link_to f.question, :anchor=>f.id %>
+						</li>
+					<% end %>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<% for f in @faqs %>
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<a name="<%=h f.id %>"></a>
+			
+			<p class="meta"><span class="date"></p>
+			<div class="entry">
+				<h2>
+					<%= simple_format(f.question) %>
+					</h2>
+				<p>
+				<%=h f.answer%>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<% end %>
