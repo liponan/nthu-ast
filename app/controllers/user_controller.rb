@@ -9,16 +9,16 @@ class UserController < ApplicationController
   def loggingin
     if user = User.authenticate(params[:user])
       session[:id] = user.id # Remember the user's id during this session 
-      redirect_to session[:return_to] || '/'
+      redirect_to(session[:return_to] || '/')
     else
       flash[:error] = 'Invalid login.' 
-      redirect_to :action => 'login', :username => params[:email][:username]
+      redirect_to(:action => 'login', :username => params[:email][:username])
     end
   end
   def logout
     reset_session
     flash[:message] = "You've sucesffully logged out."
-    redirect_to :action => "login"
+    redirect_to(:action => "login")
   end
 
   def sign_up
@@ -42,7 +42,7 @@ class UserController < ApplicationController
   def edit_profile
     if request.post? and @user.update_attributes(params[:user])
       flash[:message] = "個人資料已經更新！"
-      redirect_to (:action => "profile")
+      redirect_to(:action=>"profile")
     end
   end
   def records
