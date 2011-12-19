@@ -1,7 +1,6 @@
 # encoding: utf-8
 class AuditoriumController < ApplicationController
   before_filter :login_required
-
   def index
   end
   def query
@@ -47,8 +46,10 @@ class AuditoriumController < ApplicationController
     end
     @program = Program.new(params[:program])
     @contact = Contact.new(params[:contact])
+    @club_activity = ClubActivity.create(:club=>'F')
     @contact.user = @user
     @program.contact = @contact
+    @program.club_activity = @club_activity
     if request.post? and @program.save
       redirect_to(:action=>:blocks, :pid=>@program.pid)
     end
@@ -81,7 +82,24 @@ class AuditoriumController < ApplicationController
       @program.program_items << @program_item
       redirect_to(:action=>:items, :pid=>@program.pid)
     end
-  def done
+  def receipt
+    @program = Program.find_by_pid(params[:pid])
+    check_owner(@program.user)
+  end
+  def edit_program
+    @program = Program.find_by_pid(params[:pid])
+    check_owner(@program.user)
+    if request.post? and @program.update_attributes(params[:program])
+      flash[:message] = "借用申請更新成功！"
+      redirect_to(:action=>"records")
+    end
+  end
+  
+  def available(date)
+    @range = 30
+    @up_bound = '2012-07-31'
+    return false if (Date.parse(date).jd - Time.now.to_date.jd) < @range
+    return false if Date.parse(date).jd > Date.parse(@up_bound).jd
   end
   def on_day(date)
     @programs = Progream.find_by_date(date)

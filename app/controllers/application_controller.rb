@@ -23,11 +23,16 @@ class ApplicationController < ActionController::Base
       user_denied
       return false
     end
+    def check_owner(owner)
+      return true if @user.id == owner.id
+      user_denied
+      return false
+    end
 
     def user_denied
       session[:return_to] = request.request_uri
-      flash[:error] = 'Ooooop!. You must to be a admin to do this.' 
-      redirect_to(:controller => 'user', :action => 'login')
+      flash[:error] = '您沒有執行此操作的權限。' 
+      redirect_to(:controller => 'home', :action => 'index')
     end
 
     def access_denied

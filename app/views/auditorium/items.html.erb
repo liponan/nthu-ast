@@ -53,7 +53,7 @@
 					
 				<% end %>
 				<% if @items %>
-				<p>填寫完了嗎？ 請檢查<%= link_to '借用明細'%>完成借用程序。</p>
+				<p>填寫完了嗎？ 請檢查<%= button_to '借用明細', :action=>"receipt" %>完成借用程序。</p>
 				<% end %>
 			</div>
 			

@@ -6,9 +6,18 @@ class AdminController < ApplicationController
   def club_activities
   end
   def list
+    @order = params[:order]
+    @programs = Program.find(:all, :order=>@order)
   end
-  def edit
+  def qualify
+    @programs = Program.find(:all, :conditions=>"event_status_id = 0", :order=>"date")
+  end
+  def edit_program
     @program = Program.find_by_pid(params[:pid])
+    if request.post? and @program.update_attributes(params[:program])
+      flash[:message] = "借用申請更新成功！"
+      redirect_to(:action=>"list")
+    end
   end
   def faq
     @faq = Faq.new(params[:faq])

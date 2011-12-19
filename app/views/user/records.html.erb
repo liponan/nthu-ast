@@ -9,13 +9,10 @@
 				<ul>
 					<% for p in @programs %>
 						<li>
-							<%=h p.date%> <strong><%=h p.name %></strong> 
-							<% if p.event_status_id == 0 %>
-							[<%=link_to '編輯', :controller=>"auditorium", \
-								:action=>"edit", :pid=>p.pid %>]
-								[<%=link_to '取消', :controller=>"auditorium", \
-									:action=>"cancel", :pid=>p.pid %>]	
-							<% end %>
+							<%=h p.date%> 
+							<strong><%= link_to p.name, :controller=>"auditorium",\
+							:action=>"receipt", :pid=>p.pid %></strong> 
+							
 						</li>
 					<% end %>
 				</ul>

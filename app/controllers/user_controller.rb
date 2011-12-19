@@ -49,4 +49,5 @@ class UserController < ApplicationController
     @programs = @user.programs
     
   end
+  
 end

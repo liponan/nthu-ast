@@ -11,6 +11,9 @@ ActionController::Routing::Routes.draw do |map|
     map.connect 'auditorium/query/:date/', :controller=>"auditorium", :action=>"query"
     map.connect 'auditorium/add_item/:pid/:id/', :controller=>"auditorium", :action=>"add_item"
     map.connect 'auditorium/:action/:pid/', :controller=>"auditorium"
+    
+    map.connect 'admin/:list/:order/', :controller=>"admin", :action=>"list",\
+     :default=>{:order=>"event_status_id"}
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)

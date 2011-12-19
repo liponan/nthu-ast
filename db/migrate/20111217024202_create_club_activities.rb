@@ -1,6 +1,7 @@
 class CreateClubActivities < ActiveRecord::Migration
   def self.up
     create_table :club_activities do |t|
+      t.integer :program_id
       t.boolean :club, :default=>"F"
       t.string :remark
       t.timestamps

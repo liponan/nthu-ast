@@ -1,0 +1,25 @@
+
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">
+				審核借用申請
+			</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<ul>
+					<% for p in @programs %>
+						<li><strong><%=h p.date %></strong> <%=h p.name %><br />
+							主辦單位：<%=h p.contact.unit %> 聯絡人：<%=h p.contact.name %></li>
+					<% end %>
+
+				</ul>
+
+			</div>
+			
+		</div>
+	</div>
+</div>

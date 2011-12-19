@@ -1,0 +1,111 @@
+<div class="post">
+	<div class="post-bgtop">
+		<div class="post-bgbtm">
+			<h2 class="title"><a href="#">編輯借用申請</a></h2>
+			<p class="meta"><span class="date">
+				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+				</p>
+			<div class="entry">
+				<% form_for :program do |f| %>
+				<fieldset>
+					<legend><h3>
+						管理者審核
+					</h3></legend>
+					<p>
+					<% fields_for :club_activity do |c| %>
+					<strong>
+						課指組活動？
+					</strong>
+						<%= c.check_box :club %>		
+					<% end %>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend><h3>
+						節目資訊
+					</h3></legend>
+					<p>
+						<strong>
+							節目名稱
+						</strong><br />
+						請提供節目的全名。
+						<br />
+						<%= f.text_field :name %>						
+					</p>
+					<strong>
+						節目日期
+					</strong><br />
+					<%= f.text_field :date %>					
+				</p>
+					<p>
+						<strong>
+							觀眾人數
+						</strong><br />
+						預估的觀眾人數；以199為上限。
+						<br />
+						<%= f.text_field :audience %>
+					</p>
+				<fieldset>
+					<legend><h3>
+						借用時段
+					</h3></legend>
+					<p><ul>
+						<% if @program.block_1 %>
+						<li><%=h f.check_box :block_1, {}, '1', '0' %> 早上（08:00-12:00） </li>
+						<% end %>
+						<% if @program.block_2 %>
+						<li><%=h f.check_box :block_2, {}, '1', '0' %> 下午（12:00-17:00） </li>
+						<% end %>
+						<% if @program.block_3 %>
+						<li><%=h f.check_box :block_3, {}, '1', '0' %> 晚上（17:00-22:00） </li>
+						<% end %>
+					</ul></p>
+				</fieldset>		
+				</fieldset>
+				<% fields_for :contact do |c| %>
+				<fieldset>
+					<legend><h3>
+						聯絡資訊
+					</h3></legend>
+					<p>
+						<strong>姓名</strong><br />
+						<%= c.text_field :name, :value=>@user.name %>
+					</p>
+					<p>
+						<strong>E-mail</strong><br />
+						請務必填寫可以聯絡的E-mail
+						<br />
+						<%= c.text_field :email, :value=>@user.email  %>
+					</p>	
+					<p>
+						<strong>
+							借用單位
+						</strong><br />
+						<%= c.text_field :unit, :value=>@user.unit %>
+					</p>
+					<p>
+						<strong>職稱</strong><br />
+						<%= c.text_field :title, :value=>@user.title %>
+					</p>
+					<p>
+						<strong>連絡電話</strong><br />
+						<%= c.text_field :phone, :value=>@user.phone %>
+					</p>
+					<p>
+						<strong>手機</strong><br />
+						<%= c.text_field :mobile, :value=>@user.mobile %>
+					</p>
+					<p>
+						<strong>傳真</strong><br />
+						<%= c.text_field :fax, :value=>@user.fax %>
+					</p>
+					<% end %>
+					</fieldset>
+					<%= f.submit '更新' %>
+				<% end %>
+			</div>
+			
+		</div>
+	</div>
+</div>

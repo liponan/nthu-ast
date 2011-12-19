@@ -21739,3 +21739,3350 @@ ActionController::RoutingError (No route matches "/style.css" with {:method=>:ge
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:19:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+Rendered shared/_menu (0.4ms)
+Rendered shared/_admin (0.9ms)
+Rendered shared/_user (1.0ms)
+Completed in 40ms (View: 27, DB: 1) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:19:14) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-12-18 20:19:48) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template admin/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#faq (for 127.0.0.1 at 2011-12-18 20:19:55) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mFaq Load (0.2ms)[0m   [0mSELECT * FROM "faqs" [0m
+Rendering template within layouts/application
+Rendering admin/faq
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 22ms (View: 9, DB: 0) | 200 OK [http://localhost/admin/faq]
+
+
+Processing AdminController#faq (for 127.0.0.1 at 2011-12-18 20:19:55) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mFaq Load (0.2ms)[0m   [0;1mSELECT * FROM "faqs" [0m
+Rendering template within layouts/application
+Rendering admin/faq
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendered shared/_menu (0.4ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 22ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/faq]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:19:55) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:20:18) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 16ms (View: 3, DB: 1) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:20:18) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:21:28) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.6ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 91ms (View: 10, DB: 1) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:21:28) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-12-18 20:21:38) [GET]
+  Parameters: {"list"=>"list", "default"=>{"order"=>"event_status_id"}, "order"=>"date"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template admin/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:23:34) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 31ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:23:47) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 33ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:23:47) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#index (for 127.0.0.1 at 2011-12-18 20:23:56) [GET]
+  Parameters: {"list"=>"list", "default"=>{"order"=>"event_status_id"}, "order"=>"name"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template admin/index.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:24:26) [GET]
+
+ActionController::RoutingError (No route matches "/admin/list/name" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:24:49) [GET]
+
+ActionController::RoutingError (No route matches "/user/profile" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/user/profile" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:25:01) [GET]
+
+ActionController::RoutingError (No route matches "/user/records" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 20:25:11) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.8ms)
+Rendered shared/_user (0.7ms)
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:25:11) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:25:17) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:25:17) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:25:21) [GET]
+  Parameters: {"list"=>"list", "default"=>{"order"=>"event_status_id"}, "order"=>"name"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" ORDER BY name[0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/list/name]
+
+
+Processing AdminController#list to css (for 127.0.0.1 at 2011-12-18 20:25:21) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" [0m
+
+ActionView::MissingTemplate (Missing template admin/list.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:25:25) [GET]
+  Parameters: {"list"=>"list", "default"=>{"order"=>"event_status_id"}, "order"=>"date"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/list/date]
+
+
+Processing AdminController#list to css (for 127.0.0.1 at 2011-12-18 20:25:25) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" [0m
+
+ActionView::MissingTemplate (Missing template admin/list.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:25:59) [GET]
+  Parameters: {"list"=>"list", "default"=>{"order"=>"event_status_id"}, "order"=>"date"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.6ms)[0m   [0mSELECT * FROM "programs" ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 31ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/list/date]
+
+
+Processing AdminController#list to css (for 127.0.0.1 at 2011-12-18 20:25:59) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" [0m
+
+ActionView::MissingTemplate (Missing template admin/list.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:28:37) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" WHERE (event_status_id == 0) [0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 33ms (View: 19, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:28:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:31:45) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.6ms)[0m   [0mSELECT * FROM "programs" WHERE (event_status_id == 0) [0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 99ms (View: 84, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:31:45) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:32:05) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.6ms)[0m   [0mSELECT * FROM "programs" WHERE (event_status_id == 0) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.6ms)
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:34:46) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.6ms)[0m   [0mSELECT * FROM "programs" WHERE (event_status_id == 0) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 98ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:34:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:35:18) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 33ms (View: 19, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:35:18) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:35:20) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+
+ActionView::TemplateError (undefined method `tr' for nil:NilClass) on line #4 of app/views/admin/edit_program.html.erb:
+1: <div class="post">
+2: 	<div class="post-bgtop">
+3: 		<div class="post-bgbtm">
+4: 			<h2 class="title"><a href="#">編輯借用申請 <%=h @date.tr('-','/')%></a></h2>
+5: 			<p class="meta"><span class="date">
+6: 				<% if flash[:message] %><div><%= flash[:message] %></div><% end %>
+7: 			  	<% if flash[:error] %><div><%= flash[:error] %></div><% end %>
+
+    app/views/admin/edit_program.html.erb:4
+
+Rendered rescues/_trace (39.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:35:59) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+
+ActionView::TemplateError (can't convert nil into String) on line #24 of app/views/admin/edit_program.html.erb:
+21: 						<%= f.text_field :name %>
+22: 						<%= f.hidden_field :date, :value=>@date %>
+23: 						<%= f.hidden_field :pid, \
+24: 						:value=>Time.now.strftime("%Y%m%d%H%M%S")+'-'+ @date%>
+25: 					</p>
+26: 					<p>
+27: 						<strong>
+
+    app/views/admin/edit_program.html.erb:24:in `+'
+    app/views/admin/edit_program.html.erb:24
+    app/views/admin/edit_program.html.erb:10
+
+Rendered rescues/_trace (117.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:38:02) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #41 of app/views/admin/edit_program.html.erb:
+38: 						借用時段
+39: 					</h3></legend>
+40: 					<p><ul>
+41: 						<% unless @checks[0] == 1%>
+42: 						<li><%=h f.check_box :block_1, {}, '1', '0' %> 早上（08:00-12:00） </li>
+43: 						<% end %>
+44: 						<% unless @checks[1] == 1%>
+
+    app/views/admin/edit_program.html.erb:41
+    app/views/admin/edit_program.html.erb:10
+
+Rendered rescues/_trace (118.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:39:16) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+
+ActionView::TemplateError (undefined method `block_1' for #<ActionView::Helpers::FormBuilder:0x10352b670>) on line #41 of app/views/admin/edit_program.html.erb:
+38: 						借用時段
+39: 					</h3></legend>
+40: 					<p><ul>
+41: 						<% if f.block_1 %>
+42: 						<li><%=h f.check_box :block_1, {}, '1', '0' %> 早上（08:00-12:00） </li>
+43: 						<% end %>
+44: 						<% if f.block_2 %>
+
+    app/views/admin/edit_program.html.erb:41
+    app/views/admin/edit_program.html.erb:10
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:40:02) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 103ms (View: 16, DB: 0) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:40:02) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'nthu.ast') LIMIT 1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "title", "updated_at", "power", "userid", "unit", "mobile", "phone", "fax", "password", "email") VALUES(NULL, '2011-12-18 12:41:16', NULL, '2011-12-18 12:41:16', 0, NULL, NULL, NULL, NULL, NULL, '20050601', 'nthu.ast')[0m
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:42:19) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.6ms)
+Completed in 23ms (View: 10, DB: 0) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:42:19) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:47:32) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.7ms)
+Rendered shared/_user (0.6ms)
+Completed in 119ms (View: 37, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:47:32) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:54:00) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+
+ActionView::TemplateError (undefined method `club_activity' for #<ActionView::Helpers::FormBuilder:0x1032fad10>) on line #23 of app/views/admin/edit_program.html.erb:
+20: 					<strong>
+21: 						課指組活動？
+22: 					</strong>
+23: 						<%= f.check_box f.club_activity.club %>		
+24: 					
+25: 				</fieldset>
+26: 				<fieldset>
+
+    app/views/admin/edit_program.html.erb:23
+    app/views/admin/edit_program.html.erb:10
+
+Rendered rescues/_trace (113.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:54:11) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+
+ActionView::TemplateError (undefined method `club' for :club_activity:Symbol) on line #23 of app/views/admin/edit_program.html.erb:
+20: 					<strong>
+21: 						課指組活動？
+22: 					</strong>
+23: 						<%= f.check_box :club_activity.club %>		
+24: 					
+25: 				</fieldset>
+26: 				<fieldset>
+
+    app/views/admin/edit_program.html.erb:23
+    app/views/admin/edit_program.html.erb:10
+
+Rendered rescues/_trace (42.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:55:01) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 35ms (View: 21, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:55:01) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:55:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 33ms (View: 19, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:55:24) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:56:59) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"1"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"1"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 25ms (DB: 0) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:56:59) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 116ms (View: 101, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:56:59) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:57:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:57:14) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:57:24) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"2"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"1"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 20:57:24) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:57:24) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 20:57:27) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 95ms (View: 82, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:57:27) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:57:42) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id == 1) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 17ms (View: 3, DB: 1) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:57:42) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:58:28) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 1) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:58:28) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:58:29) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 1) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:58:29) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:58:57) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 1) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 17ms (View: 4, DB: 0) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:58:57) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:58:58) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 1) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 16ms (View: 3, DB: 0) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:58:58) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 20:59:05) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 0) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 20:59:05) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 21:02:42) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.7ms)
+Rendered shared/_user (0.6ms)
+Completed in 93ms (View: 80, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 21:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:02:46) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 14, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 21:02:46) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:03:23) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"3"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/admin_controller.rb:17:in `update_attributes'
+  app/controllers/admin_controller.rb:17:in `edit_program'
+
+Rendered rescues/_trace (105.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:03:43) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"3"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name世紀大辯論block_10block_21date2012-01-01block_31audience199):
+  app/controllers/admin_controller.rb:17:in `edit_program'
+
+Rendered rescues/_trace (36.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:03:49) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"3"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActiveRecord::UnknownAttributeError (unknown attribute: name世紀大辯論block_10block_21date2012-01-01block_31audience199):
+  app/controllers/admin_controller.rb:17:in `edit_program'
+
+Rendered rescues/_trace (112.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:06:56) [POST]
+  Parameters: {"event_status"=>{"event_status_id"=>"3"}, "commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"世紀大辯\350\253\226", "block_1"=>"0", "block_2"=>"1", "block_3"=>"1", "date"=>"2012-01-01", "audience"=>"199"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 21:06:56) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 32ms (View: 18, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 21:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 21:41:12) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.7ms)
+Completed in 55ms (View: 41, DB: 1) | 200 OK [http://localhost/admin/edit_program]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 21:41:13) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 21:41:21) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 21:41:21) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:41:24) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+ERROR: compiling _run_erb_app47views47auditorium47receipt46html46erb RAISED compile error
+/Users/leeneil/Dropbox/ror/ast/app/views/auditorium/receipt.html.erb:99: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_erb_app47views47auditorium47receipt46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div class=\"post\">\n\t<div class=\"post-bgtop\">\n\t\t<div class=\"post-bgbtm\">\n\t\t\t<h2 class=\"title\"><a href=\"#\">\347\267\250\350\274\257\345\200\237\347\224\250\347\224\263\350\253\213</a></h2>\n\t\t\t<p class=\"meta\"><span class=\"date\">\n\t\t\t\t"
+
+
+
+
+;  if flash[:message] ; @output_buffer.concat "<div>"; @output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat "\n\t\t\t  \t"
+;  if flash[:error] ; @output_buffer.concat "<div>"; @output_buffer.concat(( flash[:error] ).to_s); @output_buffer.concat "</div>";  end ; @output_buffer.concat "\n\t\t\t\t</p>\n\t\t\t<div class=\"entry\">\n\t\t\t\t"
+
+
+;  form_for :program do |f| ; @output_buffer.concat "\n\t\t\t\t<fieldset>\n\t\t\t\t\t<legend><h3>\n\t\t\t\t\t\t\347\256\241\347\220\206\350\200\205\345\257\251\346\240\270\n\t\t\t\t\t</h3></legend>\n\t\t\t\t\t<p>\n\t\t\t\t\t<strong>\n\t\t\t\t\t\t\347\224\263\350\253\213\347\213\200\346\205\213\n\t\t\t\t\t</strong>\n\t\t\t\t\t\t"
+
+
+
+
+
+
+
+
+; @output_buffer.concat(( collection_select(:program, :event_status_id, \
+						EventStatus.all, :id, :name) ).to_s); @output_buffer.concat "\n\t\t\t\t\t</p><p>\n\t\t\t\t\t"
+
+;  fields_for :club_activity do |c| ; @output_buffer.concat "\n\t\t\t\t\t<strong>\n\t\t\t\t\t\t\350\252\262\346\214\207\347\265\204\346\264\273\345\213\225\357\274\237\n\t\t\t\t\t</strong>\n\t\t\t\t\t\t"
+
+
+
+; @output_buffer.concat(( c.check_box :club ).to_s); @output_buffer.concat "\t\t\n\t\t\t\t\t"
+;  end ; @output_buffer.concat "\n\t\t\t\t\t</p>\n\t\t\t\t</fieldset>\n\t\t\t\t<fieldset>\n\t\t\t\t\t<legend><h3>\n\t\t\t\t\t\t\347\257\200\347\233\256\350\263\207\350\250\212\n\t\t\t\t\t</h3></legend>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\n\t\t\t\t\t\t\t\347\257\200\347\233\256\345\220\215\347\250\261\357\274\232\n\t\t\t\t\t\t</strong> "
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat((h @program.name ).to_s); @output_buffer.concat "\t\t\t\t\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<strong>\n\t\t\t\t\t\t\347\257\200\347\233\256\346\227\245\346\234\237\357\274\232\n\t\t\t\t\t</strong> "
+
+
+
+; @output_buffer.concat((h @program.date ).to_s); @output_buffer.concat "\t\t\t\t\t\t\n\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\n\t\t\t\t\t\t\t\350\247\200\347\234\276\344\272\272\346\225\270\357\274\232\n\t\t\t\t\t\t</strong> "
+
+
+
+
+; @output_buffer.concat((h @program.date ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t<fieldset>\n\t\t\t\t\t<legend><h3>\n\t\t\t\t\t\t\345\200\237\347\224\250\346\231\202\346\256\265\n\t\t\t\t\t</h3></legend>\n\t\t\t\t\t<p><ul>\n\t\t\t\t\t\t"
+
+
+
+
+
+
+;  if @program.block_1 ; @output_buffer.concat "\n\t\t\t\t\t\t<li>\346\227\251\344\270\212\357\274\21008:00-12:00\357\274\211 </li>\n\t\t\t\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t\t"
+;  if @program.block_2 ; @output_buffer.concat "\n\t\t\t\t\t\t<li>\344\270\213\345\215\210\357\274\21012:00-17:00\357\274\211 </li>\n\t\t\t\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t\t"
+;  if @program.block_3 ; @output_buffer.concat "\n\t\t\t\t\t\t<li>\346\231\232\344\270\212\357\274\21017:00-22:00\357\274\211 </li>\n\t\t\t\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t</ul></p>\n\t\t\t\t</fieldset>\t\t\n\t\t\t\t</fieldset>\n\t\t\t\t\n\t\t\t\t<fieldset>\n\t\t\t\t\t<legend><h3>\n\t\t\t\t\t\t\350\201\257\347\265\241\350\263\207\350\250\212\n\t\t\t\t\t</h3></legend>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\345\247\223\345\220\215\357\274\232</strong> "
+
+
+
+
+
+
+
+
+
+; @output_buffer.concat((h @program.contact.name ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>E-mail\357\274\232</strong> "
+
+
+; @output_buffer.concat((h @program.contact.email ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\t\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\345\200\237\347\224\250\345\226\256\344\275\215\357\274\232</strong> "
+
+
+; @output_buffer.concat((h @program.contact.unit ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\350\201\267\347\250\261\357\274\232</strong> "
+
+
+; @output_buffer.concat((h @program.contact.title ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\351\200\243\347\265\241\351\233\273\350\251\261\357\274\232</strong><br /> "
+
+
+; @output_buffer.concat((h @program.contact.phone ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\346\211\213\346\251\237\357\274\232</strong> "
+
+
+; @output_buffer.concat((h @program.contact.mobile ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t<p>\n\t\t\t\t\t\t<strong>\345\202\263\347\234\237\357\274\232</strong> "
+
+
+; @output_buffer.concat((h @program.contact.fax ).to_s); @output_buffer.concat "\t\n\t\t\t\t\t</p>\n\t\t\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t\t\t</fieldset>\n\t\t\t\t"
+
+;  end ; @output_buffer.concat "\n\t\t\t</div>\n\t\t\t\n\t\t</div>\n\t</div>\n</div>"
+
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/leeneil/Dropbox/ror/ast/app/views/auditorium/receipt.html.erb:99:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:1250:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:1326:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.9/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.9/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.9/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.9/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.9/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.2/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.9/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:29:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/leeneil/Dropbox/ror/ast/app/views/auditorium/receipt.html.erb:99: syntax error, unexpected kENSURE, expecting $end) on line #99 of app/views/auditorium/receipt.html.erb:
+96: 		</div>
+97: 	</div>
+98: </div>
+
+    app/views/auditorium/receipt.html.erb:99:in `compile!'
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:41:49) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.5ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 107ms (View: 95, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 21:41:49) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:44:21) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+
+ActionView::TemplateError (undefined method `event_status' for #<Program:0x1032b3f00>) on line #17 of app/views/auditorium/receipt.html.erb:
+14: 						處理狀態
+15: 					</h3></legend>
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+
+    app/views/auditorium/receipt.html.erb:17
+
+Rendered rescues/_trace (112.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:46:23) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.0ms)[0m   [0mSQLite3::SQLException: no such column: event_statuses.program_id: SELECT * FROM "event_statuses" WHERE ("event_statuses".program_id = 3) LIMIT 1[0m
+
+ActionView::TemplateError (SQLite3::SQLException: no such column: event_statuses.program_id: SELECT * FROM "event_statuses" WHERE ("event_statuses".program_id = 3)  LIMIT 1) on line #17 of app/views/auditorium/receipt.html.erb:
+14: 						處理狀態
+15: 					</h3></legend>
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+
+    app/views/auditorium/receipt.html.erb:17
+
+Rendered rescues/_trace (124.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:47:11) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						申請課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:48:39) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						申請課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:48:40) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						申請課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (115.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:55:44) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						申請課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (117.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:56:00) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 35ms (View: 21, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 21:56:00) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:58:51) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.7ms)
+Rendered shared/_user (0.6ms)
+Completed in 113ms (View: 27, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 21:58:51) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 21:59:23) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.3ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 101ms (View: 88, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 21:59:23) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:00:02) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 38ms (View: 24, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:00:02) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 22:00:24) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 0) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 27ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:00:24) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:00:26) [GET]
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 98ms (View: 82, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:00:27) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:00:30) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.6ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 30ms (View: 15, DB: 1) | 200 OK [http://localhost/admin/edit_program?pid=201112161054402012-01-02]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:00:31) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:00:37) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"大話合勤 2", "block_1"=>"0", "block_2"=>"0", "block_3"=>"0", "date"=>"2012-01-02", "event_status_id"=>"2", "audience"=>"190"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mProgram Update (0.4ms)[0m   [0;1mUPDATE "programs" SET "updated_at" = '2011-12-18 14:00:37', "name" = '大話合勤 2', "block_3" = 0, "event_status_id" = 2, "block_2" = 0, "date" = '2012-01-02', "audience" = '190' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 21ms (DB: 1) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:00:37) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:00:37) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:00:42) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 18, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:00:42) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:00:46) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						本節目為課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (40.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:01:50) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.6ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 99ms (View: 90, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:01:55) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:01:56) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:02:01) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 98ms (View: 15, DB: 1) | 200 OK [http://localhost/admin/edit_program?pid=201112161054402012-01-02]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:01) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:02:07) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"大話合勤 2", "block_1"=>"0", "block_2"=>"0", "block_3"=>"0", "date"=>"2012-01-02", "event_status_id"=>"2", "audience"=>"190"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mProgram Update (0.3ms)[0m   [0;1mUPDATE "programs" SET "updated_at" = '2011-12-18 14:02:07', "name" = '大話合勤 2' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 19ms (DB: 1) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:02:07) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"大話合勤 2", "block_1"=>"0", "block_2"=>"0", "block_3"=>"0", "date"=>"2012-01-02", "event_status_id"=>"2", "audience"=>"190"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:02:07) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.5ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.4ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.7ms)
+Completed in 108ms (View: 17, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:02:07) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"大話合勤 2", "block_1"=>"0", "block_2"=>"0", "block_3"=>"0", "date"=>"2012-01-02", "event_status_id"=>"2", "audience"=>"190"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 20ms (DB: 0) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:02:07) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:07) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:02:12) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 101ms (View: 19, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:12) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:02:14) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						本節目為課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (108.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:02:18) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.8ms)
+Rendered shared/_user (0.5ms)
+Completed in 30ms (View: 19, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:02:26) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 104ms (View: 19, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:27) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#edit (for 127.0.0.1 at 2011-12-18 22:02:29) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to edit. Actions: add_item, blocks, index, items, on_day, query, query_by_month, receipt, and reserve):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:02:33) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161054402012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 101ms (View: 22, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161054402012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:02:33) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:02:49) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:49) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:02:52) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:52) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:02:55) [GET]
+  Parameters: {"pid"=>"20111217181111-2011-12-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111217181111-2011-12-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;35;1mEventStatus Load (0.3ms)[0m   [0mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.7ms)
+Rendered shared/_user (0.5ms)
+Completed in 29ms (View: 15, DB: 1) | 200 OK [http://localhost/admin/edit_program?pid=20111217181111-2011-12-24]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:03:04) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"合勤聖誕\350\266\264", "block_1"=>"0", "block_2"=>"0", "block_3"=>"1", "date"=>"2011-12-24", "event_status_id"=>"2", "audience"=>"40"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mProgram Update (0.4ms)[0m   [0;1mUPDATE "programs" SET "updated_at" = '2011-12-18 14:03:04', "name" = '合勤聖誕趴', "block_3" = 1, "date" = '2011-12-24', "audience" = '40' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:03:04) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.6ms)
+Completed in 30ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:03:04) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:03:08) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.6ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 93ms (View: 83, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:03:09) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:03:56) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						本節目為課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (114.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:04:31) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.6ms)[0m   [0;1mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 31ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:04:31) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:05:53) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 97ms (View: 87, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:05:53) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#qualify (for 127.0.0.1 at 2011-12-18 22:05:58) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.5ms)[0m   [0;1mSELECT * FROM "programs" WHERE (event_status_id = 0) ORDER BY date[0m
+Rendering template within layouts/application
+Rendering admin/qualify
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;35;1mContact Load (0.4ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 28ms (View: 13, DB: 2) | 200 OK [http://localhost/admin/qualify]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:06:00) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.4ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (78.6ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.6ms)
+Completed in 110ms (View: 17, DB: 80) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:06:00) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:07:01) [GET]
+  Parameters: {"pid"=>"20111216131643-2011-12-27"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216131643-2011-12-27') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering admin/edit_program
+  [4;36;1mEventStatus Load (0.3ms)[0m   [0;1mSELECT * FROM "event_statuses" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.6ms)
+Completed in 29ms (View: 15, DB: 1) | 200 OK [http://localhost/admin/edit_program?pid=20111216131643-2011-12-27]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:07:01) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AdminController#edit_program (for 127.0.0.1 at 2011-12-18 22:07:19) [POST]
+  Parameters: {"commit"=>"更\346\226\260", "authenticity_token"=>"sJqZl6ntepBC0OU9Ad+Ngc+cCg45cv1lKZZUwHmpbgw=", "contact"=>{"name"=>"李柏\345\215\227", "title"=>"研究助\347\220\206", "mobile"=>"88635715131", "unit"=>"光電\346\211\200", "fax"=>"", "phone"=>"88635715131", "email"=>"lishantreasure@gmail.com"}, "club_activity"=>{"club"=>"0"}, "program"=>{"name"=>"大話合勤 3", "block_1"=>"0", "block_2"=>"1", "block_3"=>"0", "date"=>"2011-12-27", "event_status_id"=>"2", "audience"=>"29"}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;35;1mProgram Update (0.4ms)[0m   [0mUPDATE "programs" SET "updated_at" = '2011-12-18 14:07:19', "name" = '大話合勤 3', "block_3" = 0, "block_2" = 1, "date" = '2011-12-27', "audience" = '29' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/admin/list
+Completed in 23ms (DB: 1) | 302 Found [http://localhost/admin/edit_program]
+
+
+Processing AdminController#list (for 127.0.0.1 at 2011-12-18 22:07:19) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.4ms)[0m   [0mSELECT * FROM "programs" [0m
+Rendering template within layouts/application
+Rendering admin/list
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 3) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 103ms (View: 15, DB: 2) | 200 OK [http://localhost/admin/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:07:19) [GET]
+
+ActionController::RoutingError (No route matches "/admin/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:08:11) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 30ms (View: 18, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:08:11) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:08:14) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;35;1mClubActivity Load (0.3ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+
+ActionView::TemplateError (undefined method `club' for nil:NilClass) on line #19 of app/views/auditorium/receipt.html.erb:
+16: 					<p>
+17: 					<strong>申請狀態：</strong> <%=h @program.event_status.name %>	
+18: 					</p>
+19: 					<% if @program.club_activity.club %>
+20: 					<p><strong>
+21: 						本節目為課指組活動
+22: 					</strong></p>		
+
+    app/views/auditorium/receipt.html.erb:19
+
+Rendered rescues/_trace (39.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:09:59) [GET]
+  Parameters: {"pid"=>"20111216131643-2011-12-27"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216131643-2011-12-27') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.3ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 4) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 4) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 106ms (View: 93, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216131643-2011-12-27]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:09:59) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:10:04) [GET]
+  Parameters: {"pid"=>"20111217181111-2011-12-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111217181111-2011-12-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 6) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 6) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 32ms (View: 20, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111217181111-2011-12-24]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:10:04) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:10:07) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161047202012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 2) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 34ms (View: 21, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161047202012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:10:07) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:10:39) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.7ms)
+Rendered shared/_user (0.6ms)
+Completed in 103ms (View: 22, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:10:39) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:10:43) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://localhost/auditorium/receipt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:10:43) [GET]
+
+ActionController::RoutingError (No route matches "/auditorium/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:10:53) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://localhost/auditorium/receipt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:10:53) [GET]
+
+ActionController::RoutingError (No route matches "/auditorium/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#edit (for 127.0.0.1 at 2011-12-18 22:14:14) [GET]
+  Parameters: {"pid"=>"201112161054402012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to edit. Actions: add_item, blocks, index, items, on_day, query, query_by_month, receipt, and reserve):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:16:07) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;36;1mProgram Load (0.6ms)[0m   [0;1mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 102ms (View: 91, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:16:10) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161047202012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 39ms (View: 26, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161047202012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:16:10) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#edit_program (for 127.0.0.1 at 2011-12-18 22:17:28) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to edit_program. Actions: add_item, blocks, index, items, on_day, query, query_by_month, receipt, and reserve):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:17:46) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161047202012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+
+ActionView::TemplateError (undefined method `pid' for nil:NilClass) on line #14 of app/views/auditorium/receipt.html.erb:
+11: 			<div class="navy">
+12: 				<% if @program.event_status_id == 0 %>
+13: 				[<%=link_to '編輯', :controller=>"auditorium", \
+14: 					:action=>"edit_program", :pid=>p.pid %>]
+15: 					[<%=link_to '取消', :controller=>"auditorium", \
+16: 						:action=>"cancel", :pid=>p.pid %>]	
+17: 				<% end %>
+
+    app/views/auditorium/receipt.html.erb:14
+
+Rendered rescues/_trace (115.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:18:00) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161047202012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 2) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 2) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 39ms (View: 25, DB: 1) | 200 OK [http://localhost/auditorium/receipt/201112161047202012-01-02]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:18:00) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#edit_program (for 127.0.0.1 at 2011-12-18 22:18:02) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionController::UnknownAction (No action responded to edit_program. Actions: add_item, blocks, index, items, on_day, query, query_by_month, receipt, and reserve):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#edit_program (for 127.0.0.1 at 2011-12-18 22:19:12) [GET]
+  Parameters: {"pid"=>"201112161047202012-01-02"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.4ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '201112161047202012-01-02') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/edit_program
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 32ms (View: 19, DB: 1) | 200 OK [http://localhost/auditorium/edit_program/201112161047202012-01-02]
+
+
+Processing AuditoriumController#edit_program to css (for 127.0.0.1 at 2011-12-18 22:19:13) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/edit_program.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#logout (for 127.0.0.1 at 2011-12-18 22:21:43) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-12-18 22:21:43) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered shared/_menu (0.4ms)
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:21:43) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#sign_up (for 127.0.0.1 at 2011-12-18 22:21:46) [GET]
+Rendering template within layouts/application
+Rendering user/sign_up
+Rendered shared/_menu (0.4ms)
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/user/sign_up]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:21:46) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#sign_up (for 127.0.0.1 at 2011-12-18 22:22:22) [POST]
+  Parameters: {"commit"=>"註\345\206\212", "authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI=", "user"=>{"name"=>"李柏\347\251\216", "title"=>"值班經\347\220\206", "mobile"=>"0939239326", "unit"=>"合勤小\347\265\204", "userid"=>"", "fax"=>"", "phone"=>"", "password"=>"945945", "email"=>"leeboyin945@gmail.com"}}
+  [4;36;1mUser Load (0.1ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'leeboyin945@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.3ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "title", "updated_at", "power", "userid", "unit", "mobile", "phone", "fax", "password", "email") VALUES('李柏穎', '2011-12-18 14:22:22', '值班經理', '2011-12-18 14:22:22', 5, 'leeboyin945-gmail-com', '合勤小組', '0939239326', '', '', '945945', 'leeboyin945@gmail.com')[0m
+Redirected to http://localhost:3000/user/profile
+Completed in 13ms (DB: 0) | 302 Found [http://localhost/user/sign_up]
+
+
+Processing UserController#profile (for 127.0.0.1 at 2011-12-18 22:22:22) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering user/profile
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.7ms)
+Completed in 87ms (View: 80, DB: 0) | 200 OK [http://localhost/user/profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:22:22) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#edit_profile (for 127.0.0.1 at 2011-12-18 22:22:29) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering user/edit_profile
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.5ms)
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://localhost/user/edit_profile]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:22:30) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#query_by_month (for 127.0.0.1 at 2011-12-18 22:22:35) [GET]
+  Parameters: {"month"=>"13", "year"=>"2011"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Rendering template within layouts/application
+Rendering auditorium/query_by_month
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-17') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-18') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-19') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-20') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-21') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-22') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-23') LIMIT 1[0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-24') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-25') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-26') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-27') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-28') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-29') LIMIT 1[0m
+  [4;36;1mProgram Load (0.1ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-30') LIMIT 1[0m
+  [4;35;1mProgram Load (0.1ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-31') LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.7ms)
+Completed in 40ms (View: 31, DB: 2) | 200 OK [http://localhost/auditorium/list]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:22:35) [GET]
+
+ActionController::RoutingError (No route matches "/auditorium/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#reserve (for 127.0.0.1 at 2011-12-18 22:22:38) [GET]
+  Parameters: {"date"=>"2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-24') [0m
+  [4;36;1mClubActivity Create (0.4ms)[0m   [0;1mINSERT INTO "club_activities" ("club", "program_id", "created_at", "remark", "updated_at") VALUES('f', 0, '2011-12-18 14:22:38', NULL, '2011-12-18 14:22:38')[0m
+Rendering template within layouts/application
+Rendering auditorium/reserve
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.6ms)
+Completed in 37ms (View: 13, DB: 1) | 200 OK [http://localhost/auditorium/reserve/2012-01-24]
+
+
+Processing AuditoriumController#reserve to css (for 127.0.0.1 at 2011-12-18 22:22:38) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."date" IS NULL) [0m
+  [4;35;1mClubActivity Create (0.4ms)[0m   [0mINSERT INTO "club_activities" ("club", "program_id", "created_at", "remark", "updated_at") VALUES('f', 0, '2011-12-18 14:22:38', NULL, '2011-12-18 14:22:38')[0m
+
+ActionView::MissingTemplate (Missing template auditorium/reserve.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#reserve (for 127.0.0.1 at 2011-12-18 22:22:54) [POST]
+  Parameters: {"commit"=>"送\345\207\272", "authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI=", "contact"=>{"name"=>"李柏\347\251\216", "title"=>"值班經\347\220\206", "mobile"=>"0939239326", "unit"=>"合勤小\347\265\204", "fax"=>"", "phone"=>"", "email"=>"leeboyin945@gmail.com"}, "date"=>"2012-01-24", "program"=>{"pid"=>"20111218222238-2012-01-24", "name"=>"屋課歷歷社\350\252\262", "block_1"=>"0", "block_2"=>"0", "block_3"=>"1", "date"=>"2012-01-24", "audience"=>"30"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."date" = '2012-01-24') [0m
+  [4;36;1mClubActivity Create (0.4ms)[0m   [0;1mINSERT INTO "club_activities" ("club", "program_id", "created_at", "remark", "updated_at") VALUES('f', 0, '2011-12-18 14:22:54', NULL, '2011-12-18 14:22:54')[0m
+  [4;35;1mProgram Create (0.4ms)[0m   [0mINSERT INTO "programs" ("name", "pid", "created_at", "block_1", "updated_at", "block_2", "date", "event_status_id", "block_3", "audience") VALUES('屋課歷歷社課', '20111218222238-2012-01-24', '2011-12-18 14:22:54', 0, '2011-12-18 14:22:54', 0, '2012-01-24', 0, 1, '30')[0m
+  [4;36;1mContact Create (0.2ms)[0m   [0;1mINSERT INTO "contacts" ("name", "program_id", "created_at", "title", "updated_at", "user_id", "unit", "mobile", "phone", "fax", "email") VALUES('李柏穎', 7, '2011-12-18 14:22:54', '值班經理', '2011-12-18 14:22:54', 8, '合勤小組', '0939239326', '', '', 'leeboyin945@gmail.com')[0m
+  [4;35;1mClubActivity Update (0.1ms)[0m   [0mUPDATE "club_activities" SET "updated_at" = '2011-12-18 14:22:54', "program_id" = 7 WHERE "id" = 9[0m
+Redirected to http://localhost:3000/auditorium/blocks/20111218222238-2012-01-24
+Completed in 108ms (DB: 2) | 302 Found [http://localhost/auditorium/reserve/2012-01-24]
+
+
+Processing AuditoriumController#blocks (for 127.0.0.1 at 2011-12-18 22:22:54) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/blocks
+  [4;36;1mBlock Load (0.2ms)[0m   [0;1mSELECT * FROM "blocks" WHERE ("blocks".program_id = 7) [0m
+  [4;35;1mBlockType Load (0.3ms)[0m   [0mSELECT * FROM "block_types" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.6ms)
+Completed in 31ms (View: 14, DB: 1) | 200 OK [http://localhost/auditorium/blocks/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#blocks to css (for 127.0.0.1 at 2011-12-18 22:22:54) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/blocks.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#blocks (for 127.0.0.1 at 2011-12-18 22:23:14) [POST]
+  Parameters: {"pid"=>"20111218222238-2012-01-24", "commit"=>"新\345\242\236", "authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI=", "block"=>{"time"=>"18:00-24:00", "block_type_id"=>"3"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mBlock Create (0.4ms)[0m   [0;1mINSERT INTO "blocks" ("program_id", "created_at", "remark", "updated_at", "time", "block_type_id") VALUES(7, '2011-12-18 14:23:14', NULL, '2011-12-18 14:23:14', '18:00-24:00', 3)[0m
+Redirected to http://localhost:3000/auditorium/blocks/20111218222238-2012-01-24
+Completed in 92ms (DB: 1) | 302 Found [http://localhost/auditorium/blocks/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#blocks (for 127.0.0.1 at 2011-12-18 22:23:14) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/blocks
+  [4;35;1mBlock Load (0.3ms)[0m   [0mSELECT * FROM "blocks" WHERE ("blocks".program_id = 7) [0m
+  [4;36;1mBlockType Load (0.2ms)[0m   [0;1mSELECT * FROM "block_types" WHERE ("block_types"."id" = 3) [0m
+  [4;35;1mBlockType Load (0.2ms)[0m   [0mSELECT * FROM "block_types" [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.6ms)
+Completed in 33ms (View: 16, DB: 1) | 200 OK [http://localhost/auditorium/blocks/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#blocks to css (for 127.0.0.1 at 2011-12-18 22:23:14) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/blocks.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#items (for 127.0.0.1 at 2011-12-18 22:23:18) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering auditorium/items
+  [4;35;1mProgramItem Load (0.2ms)[0m   [0mSELECT * FROM "program_items" WHERE ("program_items".program_id = 7) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.6ms)
+Completed in 106ms (View: 18, DB: 1) | 200 OK [http://localhost/auditorium/items/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#items to css (for 127.0.0.1 at 2011-12-18 22:23:19) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+
+ActionView::MissingTemplate (Missing template auditorium/items.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#items (for 127.0.0.1 at 2011-12-18 22:23:24) [POST]
+  Parameters: {"pid"=>"20111218222238-2012-01-24", "authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI=", "program_item"=>{"name"=>""}}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+  [4;36;1mProgramItem Create (0.4ms)[0m   [0;1mINSERT INTO "program_items" ("program_id", "name", "created_at", "updated_at") VALUES(7, '', '2011-12-18 14:23:24', '2011-12-18 14:23:24')[0m
+Redirected to http://localhost:3000/auditorium/items/20111218222238-2012-01-24
+Completed in 24ms (DB: 1) | 302 Found [http://localhost/auditorium/items/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#items (for 127.0.0.1 at 2011-12-18 22:23:24) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;35;1mItem Load (0.2ms)[0m   [0mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering auditorium/items
+  [4;36;1mProgramItem Load (0.2ms)[0m   [0;1mSELECT * FROM "program_items" WHERE ("program_items".program_id = 7) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.6ms)
+Completed in 102ms (View: 12, DB: 1) | 200 OK [http://localhost/auditorium/items/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#items to css (for 127.0.0.1 at 2011-12-18 22:23:24) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;35;1mItem Load (0.4ms)[0m   [0mSELECT * FROM "items" [0m
+
+ActionView::MissingTemplate (Missing template auditorium/items.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#items (for 127.0.0.1 at 2011-12-18 22:23:40) [POST]
+  Parameters: {"pid"=>"20111218222238-2012-01-24", "commit"=>"新\345\242\236", "authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI=", "program_item"=>{"name"=>"譜\346\236\266"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mItem Load (0.3ms)[0m   [0;1mSELECT * FROM "items" [0m
+  [4;35;1mProgramItem Create (0.4ms)[0m   [0mINSERT INTO "program_items" ("program_id", "name", "created_at", "updated_at") VALUES(7, '譜架', '2011-12-18 14:23:40', '2011-12-18 14:23:40')[0m
+Redirected to http://localhost:3000/auditorium/items/20111218222238-2012-01-24
+Completed in 25ms (DB: 1) | 302 Found [http://localhost/auditorium/items/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#items (for 127.0.0.1 at 2011-12-18 22:23:40) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+Rendering template within layouts/application
+Rendering auditorium/items
+  [4;35;1mProgramItem Load (0.3ms)[0m   [0mSELECT * FROM "program_items" WHERE ("program_items".program_id = 7) [0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.7ms)
+Completed in 100ms (View: 83, DB: 1) | 200 OK [http://localhost/auditorium/items/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#items to css (for 127.0.0.1 at 2011-12-18 22:23:40) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mItem Load (0.2ms)[0m   [0;1mSELECT * FROM "items" [0m
+
+ActionView::MissingTemplate (Missing template auditorium/items.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:23:43) [POST]
+  Parameters: {"authenticity_token"=>"Lnq0eV0quWAf8IRB4NMaE3L5OVmbg+6p/Y/SyhtSwLI="}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 2) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 1) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_user (0.6ms)
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://localhost/auditorium/receipt]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:23:43) [GET]
+
+ActionController::RoutingError (No route matches "/auditorium/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:24:13) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 7) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.6ms)
+Completed in 108ms (View: 20, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:24:13) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#edit_program (for 127.0.0.1 at 2011-12-18 22:24:32) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/edit_program
+Rendered shared/_menu (0.2ms)
+Rendered shared/_user (0.5ms)
+Completed in 23ms (View: 11, DB: 0) | 200 OK [http://localhost/auditorium/edit_program/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#edit_program to css (for 127.0.0.1 at 2011-12-18 22:24:32) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/edit_program.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserController#logout (for 127.0.0.1 at 2011-12-18 22:24:42) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Redirected to http://localhost:3000/user/login
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/user/logout]
+
+
+Processing UserController#login (for 127.0.0.1 at 2011-12-18 22:24:42) [GET]
+Rendering template within layouts/application
+Rendering user/login
+Rendered shared/_menu (0.4ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/user/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:24:42) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#loggingin (for 127.0.0.1 at 2011-12-18 22:24:47) [POST]
+  Parameters: {"commit"=>"登\345\205\245", "authenticity_token"=>"/Ld+RaMtiztCARyivPyJc+Cy6eg4EbYDWWwNPnsk7B4=", "user"=>{"password"=>"123456", "email"=>"lishantreasure@gmail.com"}}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."password" = '123456' AND "users"."email" = 'lishantreasure@gmail.com') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 7ms (DB: 0) | 302 Found [http://localhost/user/loggingin]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-18 22:24:47) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 32ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:24:47) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UserController#records (for 127.0.0.1 at 2011-12-18 22:24:52) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering user/records
+  [4;35;1mProgram Load (0.5ms)[0m   [0mSELECT "programs".* FROM "programs" INNER JOIN "contacts" ON "programs".id = "contacts".program_id WHERE (("contacts".user_id = 1)) [0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 26ms (View: 16, DB: 1) | 200 OK [http://localhost/user/records]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:24:52) [GET]
+
+ActionController::RoutingError (No route matches "/user/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:24:54) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 99ms (View: 87, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:24:54) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:25:02) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.2ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 7) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+Rendered shared/_menu (0.5ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.6ms)
+Completed in 36ms (View: 23, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:25:02) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:29:22) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+
+NoMethodError (undefined method `user' for #<Program:0x103540728>):
+  app/controllers/auditorium_controller.rb:88:in `receipt'
+
+Rendered rescues/_trace (31.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:29:51) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+
+NoMethodError (undefined method `check_owner' for #<AuditoriumController:0x1031b7ef8>):
+  app/controllers/auditorium_controller.rb:88:in `receipt'
+
+Rendered rescues/_trace (104.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:30:20) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mContact Load (0.2ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+
+NoMethodError (undefined method `check_owner' for #<AuditoriumController:0x1033f3d20>):
+  app/controllers/auditorium_controller.rb:88:in `receipt'
+
+Rendered rescues/_trace (31.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:30:21) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+
+NoMethodError (undefined method `check_owner' for #<AuditoriumController:0x1030b6ab8>):
+  app/controllers/auditorium_controller.rb:88:in `receipt'
+
+Rendered rescues/_trace (31.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:30:22) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+
+NoMethodError (undefined method `check_owner' for #<AuditoriumController:0x1032f44b0>):
+  app/controllers/auditorium_controller.rb:88:in `receipt'
+
+Rendered rescues/_trace (105.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:30:46) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-18 22:30:46) [GET]
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:31:13) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 8) [0m
+Redirected to http://localhost:3000/
+Completed in 88ms (DB: 1) | 302 Found [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-18 22:31:13) [GET]
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:31:13) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:31:22) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 35ms (View: 17, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:31:22) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:32:48) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.2ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 34ms (View: 16, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:32:48) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 1) LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:33:24) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "contacts" ON "users".id = "contacts".user_id WHERE (("contacts".program_id = 5)) [0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.2ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.5ms)
+Rendered shared/_user (0.5ms)
+Completed in 105ms (View: 18, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:33:24) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT "users".* FROM "users" INNER JOIN "contacts" ON "users".id = "contacts".user_id WHERE (("contacts".program_id = 1)) [0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#receipt (for 127.0.0.1 at 2011-12-18 22:36:28) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+
+SyntaxError (/Users/leeneil/Dropbox/ror/ast/app/controllers/auditorium_controller.rb:4: syntax error, unexpected '(', expecting kEND
+  before_filter :check_owner(@program.user), :only=>:receipt
+                             ^
+/Users/leeneil/Dropbox/ror/ast/app/controllers/auditorium_controller.rb:4: syntax error, unexpected ')', expecting kEND
+  before_filter :check_owner(@program.user), :only=>:receipt
+                                           ^):
+  
+
+Rendered rescues/_trace (101.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:37:47) [GET]
+  Parameters: {"pid"=>"20111216133336-2012-01-03"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111216133336-2012-01-03') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;35;1mEventStatus Load (0.2ms)[0m   [0mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;36;1mClubActivity Load (0.2ms)[0m   [0;1mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 5) LIMIT 1[0m
+  [4;35;1mContact Load (0.3ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".program_id = 5) LIMIT 1[0m
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 34ms (View: 21, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111216133336-2012-01-03]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:37:47) [GET]
+  Parameters: {"id"=>"style"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.2ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:38:00) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProgram Load (0.3ms)[0m   [0mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering auditorium/receipt
+  [4;36;1mEventStatus Load (0.2ms)[0m   [0;1mSELECT * FROM "event_statuses" WHERE ("event_statuses"."id" = 0) [0m
+  [4;35;1mClubActivity Load (0.3ms)[0m   [0mSELECT * FROM "club_activities" WHERE ("club_activities".program_id = 7) LIMIT 1[0m
+  [4;36;1mContact Load (0.3ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".program_id = 7) LIMIT 1[0m
+Rendered shared/_menu (0.3ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 107ms (View: 22, DB: 1) | 200 OK [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing AuditoriumController#receipt to css (for 127.0.0.1 at 2011-12-18 22:38:01) [GET]
+  Parameters: {"id"=>"style"}
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" IS NULL) LIMIT 1[0m
+
+ActionView::MissingTemplate (Missing template auditorium/receipt.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing AuditoriumController#receipt (for 127.0.0.1 at 2011-12-18 22:38:31) [GET]
+  Parameters: {"pid"=>"20111218222238-2012-01-24"}
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProgram Load (0.3ms)[0m   [0;1mSELECT * FROM "programs" WHERE ("programs"."pid" = '20111218222238-2012-01-24') LIMIT 1[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT "users".* FROM "users" INNER JOIN "contacts" ON "users".id = "contacts".user_id WHERE (("contacts".program_id = 7)) [0m
+Redirected to http://localhost:3000/
+Completed in 18ms (DB: 1) | 302 Found [http://localhost/auditorium/receipt/20111218222238-2012-01-24]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-18 22:38:31) [GET]
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.2ms)
+Rendered shared/_admin (0.6ms)
+Rendered shared/_user (0.5ms)
+Completed in 86ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-18 22:38:31) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
