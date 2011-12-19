@@ -97,7 +97,7 @@ class AuditoriumController < ApplicationController
   
   def available(date)
     @range = 30
-    @up_bound = '2012-07-31'
+    @up_bound = '2012-06-30'
     return false if (Date.parse(date).jd - Time.now.to_date.jd) < @range
     return false if Date.parse(date).jd > Date.parse(@up_bound).jd
   end
