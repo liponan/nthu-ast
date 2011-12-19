@@ -25086,3 +25086,213 @@ ActionController::RoutingError (No route matches "/style.css" with {:method=>:ge
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:29:11) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (1.0ms)
+Completed in 57ms (View: 55, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:29:12) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:29:25) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:29:25) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:29:26) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:29:26) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:29:45) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:29:45) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:33:51) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:33:51) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:34:12) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:34:12) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:34:18) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:34:18) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:34:32) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:34:32) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:34:40) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:34:40) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:36:13) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.5ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:36:13) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:36:20) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:36:20) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:36:46) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:36:46) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:37:03) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.4ms)
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:37:03) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2011-12-19 09:37:19) [GET]
+Rendering template within layouts/application
+Rendering home/index
+Rendered shared/_menu (0.5ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://127.0.0.1/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-12-19 09:37:20) [GET]
+
+ActionController::RoutingError (No route matches "/style.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
