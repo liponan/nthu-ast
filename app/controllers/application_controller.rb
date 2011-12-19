@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
 
     def user_denied
       session[:return_to] = request.request_uri
-      flash[:error] = '您沒有執行此操作的權限。' 
+      #flash[:error] = '您沒有執行此操作的權限。' 
       redirect_to(:controller => 'home', :action => 'index')
     end
 
